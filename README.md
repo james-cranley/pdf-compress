@@ -1,8 +1,7 @@
 # pdf-compress
 
 Shrink a large PDF to fit a size budget by **selectively rasterising only the
-heavy pages** — typically figure pages built from enormous *vector* scatter /
-UMAP / spatial plots — while leaving text pages as native, searchable vector.
+heavy pages** — typically figure pages built from enormous *vector* plots — while leaving text pages as native, searchable vector.
 
 It then **maximises quality under the budget**: it renders the heavy pages at
 the highest DPI whose output still fits under your target size.
@@ -10,7 +9,7 @@ the highest DPI whose output still fits under your target size.
 ## Why this works
 
 In figure-heavy scientific PDFs, a few pages can each be tens of MB because a
-plot of hundreds of thousands of cells is stored as vector geometry (millions
+plot of hundreds of points is stored as vector geometry (millions
 of Bezier curves). Flattening those pages to a 300+ DPI raster collapses them
 dramatically with no visible quality loss at normal viewing/print sizes. Pages
 that are mostly text stay untouched, so their text remains selectable and crisp.
