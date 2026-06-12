@@ -1,0 +1,2 @@
+# Pinned to the version this script was tested against.
+PyMuPDF==1.27.2.3
